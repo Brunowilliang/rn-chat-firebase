@@ -1,0 +1,77 @@
+{
+  "expo": {
+    "name": "chat",
+    "slug": "chat",
+    "version": "2.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#171719"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 60000,
+      "url": "https://u.expo.dev/74f3e34d-e009-4f55-8748-22fdeec5f32d"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.chat.app",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "buildNumber": "2.0.1",
+      "supportsTablet": false
+    },
+    "androidNavigationBar": {
+      "backgroundColor": "#23232B"
+    },
+    "androidStatusBar": {
+      "barStyle": "light-content",
+      "translucent": false,
+      "backgroundColor": "#171719"
+    },
+    "android": {
+      "package": "com.chat.app",
+      "googleServicesFile": "./google-services.json",
+      "versionCode": 3,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#171719"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "scheme": "chat",
+    "web": {
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d15a730e-77b0-4602-8572-d9ddddb7002a"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ],
+      "@react-native-firebase/app"
+    ]
+  }
+}
