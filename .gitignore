@@ -123,3 +123,7 @@ web-build/
 dist/
 
 # @end expo-cli
+
+#firebase config
+google-services.json
+GoogleService-Info.plist
